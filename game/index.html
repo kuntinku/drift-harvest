@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Drift Harvest</title>
+<style>
+  :root { --ink:#eaf2ff; --dim:#8fa3c8; }
+  html,body { margin:0; height:100%; background:#070b16; color:var(--ink);
+    font-family:'Segoe UI', system-ui, sans-serif; overflow:hidden; }
+  #stage { display:flex; align-items:center; justify-content:center; height:100%; }
+  canvas { background:#070b16; image-rendering:auto; box-shadow:0 0 60px rgba(64,120,255,.15); }
+  #hint { position:fixed; bottom:8px; width:100%; text-align:center; color:var(--dim); font-size:13px; }
+</style>
+</head>
+<body>
+<div id="stage"><canvas id="game" width="960" height="600"></canvas></div>
+<div id="hint">Arrows / WASD to thrust &middot; Space to brake &middot; P to pause</div>
+<script type="module" src="./src/main.js"></script>
+</body>
+</html>
